@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{dd0174ce-3b4b-43df-bb18-d4636cfd5174}</ProjectGuid>
+    <RootNamespace>BasicComputerProgramming</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(BANGTAL_HOME)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(BANGTAL_HOME)lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(BANGTAL_HOME)include</AdditionalIncludeDirectories>
+      <AdditionalOptions>/source-charset:utf-8 /execution-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(BANGTAL_HOME)lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>bangtal.lib;bangtalC++.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(BANGTAL_HOME)include</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(BANGTAL_HOME)include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(BANGTAL_HOME)lib\win32\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>bangtal.lib;bangtalC++.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="avoiding.cpp" />
+    <ClCompile Include="flappy.cpp" />
+    <ClCompile Include="game.cpp" />
+    <ClCompile Include="Header\scene.cpp" />
+    <ClCompile Include="jumping.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="img\avoiding\blue_round_bullet.png" />
+    <Image Include="img\avoiding\blue_square_bullet.png" />
+    <Image Include="img\avoiding\green_round_bullet.png" />
+    <Image Include="img\avoiding\green_square_bullet.png" />
+    <Image Include="img\avoiding\player.png" />
+    <Image Include="img\avoiding\red_round_bullet.png" />
+    <Image Include="img\avoiding\red_square_bullet.png" />
+    <Image Include="img\avoiding_O.png" />
+    <Image Include="img\avoiding_X.png" />
+    <Image Include="img\back.png" />
+    <Image Include="img\background.png" />
+    <Image Include="img\black.png" />
+    <Image Include="img\easter_egg_1.png" />
+    <Image Include="img\empty.png" />
+    <Image Include="img\end.png" />
+    <Image Include="img\flappy\barrier.png" />
+    <Image Include="img\flappy\bird.png" />
+    <Image Include="img\flappy\bird1.png" />
+    <Image Include="img\flappy\bird2.png" />
+    <Image Include="img\flappy\empty.png" />
+    <Image Include="img\flappy_O.png" />
+    <Image Include="img\flappy_X.png" />
+    <Image Include="img\guide.png" />
+    <Image Include="img\jumping\barrier1.png" />
+    <Image Include="img\jumping\barrier2.png" />
+    <Image Include="img\jumping\barrier3.png" />
+    <Image Include="img\jumping\player1.png" />
+    <Image Include="img\jumping\player2.png" />
+    <Image Include="img\jumping\player3.png" />
+    <Image Include="img\jumping\player4.png" />
+    <Image Include="img\jumping\player5.png" />
+    <Image Include="img\jumping\player6.png" />
+    <Image Include="img\jumping\player7.png" />
+    <Image Include="img\jumping\player8.png" />
+    <Image Include="img\jumping_O.png" />
+    <Image Include="img\jumping_X.png" />
+    <Image Include="img\menu.png" />
+    <Image Include="img\option.png" />
+    <Image Include="img\question.png" />
+    <Image Include="img\restart.png" />
+    <Image Include="img\resume.png" />
+    <Image Include="img\sound_O.png" />
+    <Image Include="img\sound_X.png" />
+    <Image Include="img\start.png" />
+    <Image Include="img\startmenu.png" />
+    <Image Include="img\white_horizontal_bar.png" />
+    <Image Include="img\white_vertical_bar.png" />
+    <Image Include="res\img\apple.png" />
+    <Image Include="res\img\black.png" />
+    <Image Include="res\img\brick.png" />
+    <Image Include="res\img\door-left-closed.png" />
+    <Image Include="res\img\door-left-opened.png" />
+    <Image Include="res\img\door-right-closed.png" />
+    <Image Include="res\img\door-right-opened.png" />
+    <Image Include="res\img\empty-button.png" />
+    <Image Include="res\img\end.png" />
+    <Image Include="res\img\key.png" />
+    <Image Include="res\img\keypad.png" />
+    <Image Include="res\img\password.png" />
+    <Image Include="res\img\play.png" />
+    <Image Include="res\img\pot.png" />
+    <Image Include="res\img\restart.png" />
+    <Image Include="res\img\santa-background.png" />
+    <Image Include="res\img\santa.png" />
+    <Image Include="res\img\scene-1.png" />
+    <Image Include="res\img\scene-2.png" />
+    <Image Include="res\img\score.png" />
+    <Image Include="res\img\snake.png" />
+    <Image Include="res\img\start.png" />
+    <Image Include="res\img\switch.png" />
+    <Image Include="res\img\title.png" />
+    <Image Include="res\Sprite\apple.png" />
+    <Image Include="res\Sprite\black.png" />
+    <Image Include="res\Sprite\brick.png" />
+    <Image Include="res\Sprite\snake.png" />
+    <Image Include="res\test.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="avoiding.h" />
+    <ClInclude Include="flappy.h" />
+    <ClInclude Include="game.h" />
+    <ClInclude Include="Header\scene.h" />
+    <ClInclude Include="jumping.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="sound\1.mp3" />
+    <Media Include="sound\2.mp3" />
+    <Media Include="sound\3.mp3" />
+    <Media Include="sound\avoid\die.mp3" />
+    <Media Include="sound\click.mp3" />
+    <Media Include="sound\flappy\hit.mp3" />
+    <Media Include="sound\ingame\1.mp3" />
+    <Media Include="sound\ingame\2.mp3" />
+    <Media Include="sound\ingame\3.mp3" />
+    <Media Include="sound\ingame\4.mp3" />
+    <Media Include="sound\ingame\5.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Source.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

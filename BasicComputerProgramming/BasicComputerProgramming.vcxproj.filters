@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Header\scene.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="flappy.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="jumping.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="avoiding.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\img\apple.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\img\black.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\img\brick.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\img\door-left-closed.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\img\door-left-opened.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\img\door-right-closed.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\img\door-right-opened.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\img\end.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\img\key.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\img\keypad.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\img\password.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\img\play.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\img\pot.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\img\restart.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\img\santa.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\img\santa-background.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\img\scene-1.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\img\scene-2.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\img\snake.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\img\start.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\img\switch.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Sprite\apple.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Sprite\black.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Sprite\brick.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Sprite\snake.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\img\title.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\test.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\img\score.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\img\empty-button.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\black.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\white_horizontal_bar.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\white_vertical_bar.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\background.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\flappy\barrier.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\flappy\empty.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\avoiding\player.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\flappy\bird.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\jumping\barrier1.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\jumping\barrier2.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\jumping\barrier3.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\jumping\player1.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\jumping\player2.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\jumping\player3.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\jumping\player4.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\jumping\player5.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\jumping\player6.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\jumping\player7.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\jumping\player8.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\avoiding\blue_round_bullet.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\avoiding\blue_square_bullet.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\avoiding\green_round_bullet.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\avoiding\green_square_bullet.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\avoiding\red_round_bullet.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\avoiding\red_square_bullet.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\flappy\bird1.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\flappy\bird2.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\avoiding_O.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\avoiding_X.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\back.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\end.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\flappy_O.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\flappy_X.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\jumping_O.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\jumping_X.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\menu.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\option.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\question.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\restart.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\sound_O.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\sound_X.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\start.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\startmenu.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\easter_egg_1.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\empty.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\guide.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="img\resume.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header\scene.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="flappy.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="jumping.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="avoiding.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="sound\1.mp3" />
+    <Media Include="sound\2.mp3" />
+    <Media Include="sound\3.mp3" />
+    <Media Include="sound\click.mp3" />
+    <Media Include="sound\ingame\1.mp3" />
+    <Media Include="sound\ingame\2.mp3" />
+    <Media Include="sound\ingame\3.mp3" />
+    <Media Include="sound\ingame\4.mp3" />
+    <Media Include="sound\ingame\5.mp3" />
+    <Media Include="sound\flappy\hit.mp3" />
+    <Media Include="sound\avoid\die.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Source.txt" />
+  </ItemGroup>
+</Project>
