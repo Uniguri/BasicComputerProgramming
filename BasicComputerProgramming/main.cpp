@@ -387,6 +387,7 @@ void PauseScreenMouseCallback(ObjectID obj, int x, int y, MouseAction action)
 		// Menu
 		if (Game.isSoundOn)
 		{
+			stopSound(nowBGM);
 			srand(rand());
 			nowBGM = bgmInMenu[rand() % BGM_IN_MENU_NUMBER];
 			playSound(nowBGM, true);
